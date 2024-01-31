@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: flex;
+}
+
+.priceBox {
+    width: 270px;
+    margin: 0 15px;
+    padding: 16px 25px 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 1px 10px #0000000a;
+}
+
+.priceBox .priceImg {
+    max-width: 80%;
+}
+
+.priceBox .priceName {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0496ff;
+}
+
+.priceBox ul {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #ededed;
+}
+
+.priceBox ul li {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #3b3b3b;
+}
+
+.priceBox ul li img {
+    max-width: 1rem;
+    margin-right: 10px;
+}
+
+.priceBox .priceNum {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3b3b3b;
+}
+
+.priceBox button {
+    width: 100%;
+    padding: 11.5px 0;
+    border-radius: 2rem;
+    border: 1px solid #0496ff;
+    font-weight: 500;
+    color: #0496ff;
+    background-color: white;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.priceBox button:hover {
+    color: white;
+    background-color: #0496ff;
+}
+
+@media (max-width: 1000px) {
+    .priceBox {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        height: auto;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    .priceBox {
+        margin: 0;
+        padding: 16px 20px 100px 20px;
+        border-radius: 0;
+        box-shadow: none;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ededed;
+    }
+}
