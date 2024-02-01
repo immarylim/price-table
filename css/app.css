@@ -97,15 +97,15 @@ body {
     }
 
     #container {
+        padding: 10px 0;
         flex-direction: column;
+        align-items: center;
     }
 
     .priceBox {
-        margin: 0;
+        max-width: 90%;
+        margin: 10px 0;
         padding: 16px 20px 100px 20px;
-        border-radius: 0;
-        box-shadow: none;
         box-sizing: border-box;
-        border-bottom: 1px solid #ededed;
     }
 }
